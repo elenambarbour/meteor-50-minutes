@@ -1,0 +1,18 @@
+<head>
+  <title>tasklist</title>
+</head>
+
+<body>
+  <h1>Add Task</h1>
+
+  <h3>Tasks</h3>
+  {{>tasks}}
+</body>
+
+<template name="tasks">
+  <ul>
+    {{#each tasks}}
+    <li>{{name}}</li>
+    {{/each}}
+  </ul>
+</template>
